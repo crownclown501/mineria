@@ -90,16 +90,14 @@ def distancia(vp, p):
     suma = 0
     for j in range(4):
         for i1 in range(10):
-            for i in range(6):
-                # restamos los valores P-Q en su respectiva posicion y lo elvamos al cuadrado
-                cuadrado = ((vp[i1][i]-p[j][i])**2)
-                suma = suma+cuadrado
-            if i == 5:
-                cuadrado = ((vp[i1][i]-p[j][i])**2)
-                suma = suma+cuadrado
-                m = (math.sqrt(suma))
-                r.append(round(m, 2))
-                suma = 0
+            for i in range (6):
+                #restamos los valores P-Q en su respectiva posicion y lo elvamos al cuadrado
+                cuadrado=((vp[i1][i]-p[j][i])**2)
+                suma=suma+cuadrado
+            
+            m=(math.sqrt(suma)) 
+            r.append(round(m, 2))
+            suma = 0
 
 
 def orden(z):
